@@ -20,6 +20,14 @@ class SliverAppBarExample extends StatelessWidget {
               ),
             ),
           ),
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              childCount: 100,
+              (context, index) => ListTile(
+                title: Text('List Item: $index'),
+              ),
+            ),
+          ),
         ],
       ),
     );
